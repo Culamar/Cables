@@ -1,0 +1,128 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="Хранилище CablesModelContainer" CdmEntityContainer="CablesEntities">
+    <EntitySetMapping Name="Current">
+      <EntityTypeMapping TypeName="CablesModel.Current">
+        <MappingFragment StoreEntitySet="Current">
+          <ScalarProperty Name="current_id" ColumnName="current_id" />
+          <ScalarProperty Name="cable_id" ColumnName="cable_id" />
+          <ScalarProperty Name="cross_area" ColumnName="cross_area" />
+          <ScalarProperty Name="screen_area" ColumnName="screen_area" />
+          <ScalarProperty Name="material" ColumnName="material" />
+          <ScalarProperty Name="Voltage" ColumnName="Voltage" />
+          <ScalarProperty Name="enviroment" ColumnName="enviroment" />
+          <ScalarProperty Name="paving_type" ColumnName="paving_type" />
+          <ScalarProperty Name="vein_number" ColumnName="vein_number" />
+          <ScalarProperty Name="I" ColumnName="I" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Loses">
+      <EntityTypeMapping TypeName="CablesModel.Loses">
+        <MappingFragment StoreEntitySet="Loses">
+          <ScalarProperty Name="loses_id" ColumnName="loses_id" />
+          <ScalarProperty Name="cable_id" ColumnName="cable_id" />
+          <ScalarProperty Name="cross_area" ColumnName="cross_area" />
+          <ScalarProperty Name="screen_area" ColumnName="screen_area" />
+          <ScalarProperty Name="material" ColumnName="material" />
+          <ScalarProperty Name="enviroment" ColumnName="enviroment" />
+          <ScalarProperty Name="paving_type" ColumnName="paving_type" />
+          <ScalarProperty Name="vein_number" ColumnName="vein_number" />
+          <ScalarProperty Name="Rs" ColumnName="Rs" />
+          <ScalarProperty Name="Rs0" ColumnName="Rs0" />
+          <ScalarProperty Name="Rs_R" ColumnName="Rs/R" />
+          <ScalarProperty Name="P" ColumnName="P" />
+          <ScalarProperty Name="Q" ColumnName="Q" />
+          <ScalarProperty Name="Rs_X" ColumnName="Rs/X" />
+          <ScalarProperty Name="LambdaScreen" ColumnName="LambdaScreen" />
+          <ScalarProperty Name="LambdaArmor" ColumnName="LambdaArmor" />
+          <ScalarProperty Name="dvn" ColumnName="dvn" />
+          <ScalarProperty Name="Fst" ColumnName="Fst" />
+          <ScalarProperty Name="Armor" ColumnName="Armor" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Resistance">
+      <EntityTypeMapping TypeName="CablesModel.Resistance">
+        <MappingFragment StoreEntitySet="Resistance">
+          <ScalarProperty Name="cable_id" ColumnName="cable_id" />
+          <ScalarProperty Name="cross_area" ColumnName="cross_area" />
+          <ScalarProperty Name="screen_area" ColumnName="screen_area" />
+          <ScalarProperty Name="R0" ColumnName="R0" />
+          <ScalarProperty Name="R_" ColumnName="R'" />
+          <ScalarProperty Name="yp" ColumnName="yp" />
+          <ScalarProperty Name="yb" ColumnName="yb" />
+          <ScalarProperty Name="xs" ColumnName="xs" />
+          <ScalarProperty Name="xp" ColumnName="xp" />
+          <ScalarProperty Name="R" ColumnName="R" />
+          <ScalarProperty Name="material" ColumnName="material" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="sysdiagrams">
+      <EntityTypeMapping TypeName="CablesModel.sysdiagrams">
+        <MappingFragment StoreEntitySet="sysdiagrams">
+          <ScalarProperty Name="name" ColumnName="name" />
+          <ScalarProperty Name="principal_id" ColumnName="principal_id" />
+          <ScalarProperty Name="diagram_id" ColumnName="diagram_id" />
+          <ScalarProperty Name="version" ColumnName="version" />
+          <ScalarProperty Name="definition" ColumnName="definition" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="ThermalResistance">
+      <EntityTypeMapping TypeName="CablesModel.ThermalResistance">
+        <MappingFragment StoreEntitySet="ThermalResistance">
+          <ScalarProperty Name="thermal_id" ColumnName="thermal_id" />
+          <ScalarProperty Name="cable_id" ColumnName="cable_id" />
+          <ScalarProperty Name="cross_area" ColumnName="cross_area" />
+          <ScalarProperty Name="screen_area" ColumnName="screen_area" />
+          <ScalarProperty Name="material" ColumnName="material" />
+          <ScalarProperty Name="enviroment" ColumnName="enviroment" />
+          <ScalarProperty Name="paving_type" ColumnName="paving_type" />
+          <ScalarProperty Name="vein_number" ColumnName="vein_number" />
+          <ScalarProperty Name="Voltage" ColumnName="Voltage" />
+          <ScalarProperty Name="h" ColumnName="h" />
+          <ScalarProperty Name="h1" ColumnName="h1" />
+          <ScalarProperty Name="dzh" ColumnName="dzh" />
+          <ScalarProperty Name="G" ColumnName="G" />
+          <ScalarProperty Name="h2" ColumnName="h2" />
+          <ScalarProperty Name="Ds" ColumnName="Ds" />
+          <ScalarProperty Name="h3" ColumnName="h3" />
+          <ScalarProperty Name="dvn" ColumnName="dvn" />
+          <ScalarProperty Name="T1" ColumnName="T1" />
+          <ScalarProperty Name="T2" ColumnName="T2" />
+          <ScalarProperty Name="T3" ColumnName="T3" />
+          <ScalarProperty Name="T4" ColumnName="T4" />
+          <ScalarProperty Name="Shell" ColumnName="Shell" />
+          <ScalarProperty Name="Armor" ColumnName="Armor" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="users">
+      <EntityTypeMapping TypeName="CablesModel.users">
+        <MappingFragment StoreEntitySet="users">
+          <ScalarProperty Name="login" ColumnName="login" />
+          <ScalarProperty Name="password" ColumnName="password" />
+          <ScalarProperty Name="user_id" ColumnName="user_id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="XResistanceScreen">
+      <EntityTypeMapping TypeName="CablesModel.XResistanceScreen">
+        <MappingFragment StoreEntitySet="XResistanceScreen">
+          <ScalarProperty Name="XScreen_id" ColumnName="XScreen_id" />
+          <ScalarProperty Name="cable_id" ColumnName="cable_id" />
+          <ScalarProperty Name="cross_area" ColumnName="cross_area" />
+          <ScalarProperty Name="screen_area" ColumnName="screen_area" />
+          <ScalarProperty Name="S" ColumnName="S" />
+          <ScalarProperty Name="d" ColumnName="d" />
+          <ScalarProperty Name="dzh" ColumnName="dzh" />
+          <ScalarProperty Name="paving_type" ColumnName="paving_type" />
+          <ScalarProperty Name="material" ColumnName="material" />
+          <ScalarProperty Name="X" ColumnName="X" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>

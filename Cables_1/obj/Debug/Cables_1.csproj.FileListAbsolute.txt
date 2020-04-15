@@ -1,0 +1,144 @@
+C:\Users\Dashk\OneDrive\Рабочий стол\New folder\Cables_1\Cables_1\obj\Debug\Cables_1.csprojAssemblyReference.cache
+C:\Users\Dashk\OneDrive\Рабочий стол\New folder\Cables_1\Cables_1\obj\Debug\login.g.cs
+C:\Users\Dashk\OneDrive\Рабочий стол\New folder\Cables_1\Cables_1\obj\Debug\MainWindow.g.cs
+C:\Users\Dashk\OneDrive\Рабочий стол\New folder\Cables_1\Cables_1\obj\Debug\regin.g.cs
+C:\Users\Dashk\OneDrive\Рабочий стол\New folder\Cables_1\Cables_1\obj\Debug\App.g.cs
+C:\Users\Dashk\OneDrive\Рабочий стол\New folder\Cables_1\Cables_1\obj\Debug\Cables_1_MarkupCompile.cache
+C:\Users\Dashk\OneDrive\Рабочий стол\New folder\Cables_1\Cables_1\obj\Debug\Cables_1_MarkupCompile.lref
+C:\Users\Dashk\OneDrive\Рабочий стол\New folder\Cables_1\Cables_1\bin\Debug\Cables_1.exe.config
+C:\Users\Dashk\OneDrive\Рабочий стол\New folder\Cables_1\Cables_1\bin\Debug\Cables_1.exe
+C:\Users\Dashk\OneDrive\Рабочий стол\New folder\Cables_1\Cables_1\bin\Debug\Cables_1.pdb
+C:\Users\Dashk\OneDrive\Рабочий стол\New folder\Cables_1\Cables_1\obj\Debug\login.baml
+C:\Users\Dashk\OneDrive\Рабочий стол\New folder\Cables_1\Cables_1\obj\Debug\MainWindow.baml
+C:\Users\Dashk\OneDrive\Рабочий стол\New folder\Cables_1\Cables_1\obj\Debug\regin.baml
+C:\Users\Dashk\OneDrive\Рабочий стол\New folder\Cables_1\Cables_1\obj\Debug\Cables_1.g.resources
+C:\Users\Dashk\OneDrive\Рабочий стол\New folder\Cables_1\Cables_1\obj\Debug\Cables_1.Properties.Resources.resources
+C:\Users\Dashk\OneDrive\Рабочий стол\New folder\Cables_1\Cables_1\obj\Debug\Cables_1.csproj.GenerateResource.cache
+C:\Users\Dashk\OneDrive\Рабочий стол\New folder\Cables_1\Cables_1\obj\Debug\Cables_1.exe
+C:\Users\Dashk\OneDrive\Рабочий стол\New folder\Cables_1\Cables_1\obj\Debug\Cables_1.pdb
+C:\Users\Dashk\OneDrive\Рабочий стол\New folder\Cables_1\Cables_1\bin\Debug\EntityFramework.dll
+C:\Users\Dashk\OneDrive\Рабочий стол\New folder\Cables_1\Cables_1\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\Dashk\OneDrive\Рабочий стол\New folder\Cables_1\Cables_1\bin\Debug\EntityFramework.xml
+C:\Users\Dashk\OneDrive\Рабочий стол\New folder\Cables_1\Cables_1\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\Dashk\OneDrive\Рабочий стол\New folder\Cables_1\Cables_1\obj\Debug\Cables_1.csproj.CopyComplete
+C:\Users\Dashk\OneDrive\Рабочий стол\New folder\Cables_1\Cables_1\obj\Debug\Cables_1_Content.g.cs
+C:\Users\Dashk\OneDrive\Рабочий стол\New folder\Cables_1\Cables_1\obj\Debug\Menu.g.cs
+C:\Users\Dashk\OneDrive\Рабочий стол\New folder\Cables_1\Cables_1\obj\Debug\Menu.baml
+C:\Users\Dashk\OneDrive\Рабочий стол\New folder\Cables_1\Cables_1\obj\Debug\AdminMenu.g.cs
+C:\Users\Dashk\OneDrive\Рабочий стол\New folder\Cables_1\Cables_1\obj\Debug\AdminMenu.baml
+C:\Users\Dashk\OneDrive\Рабочий стол\New folder\Cables_1\Cables_1\obj\Debug\InsertPage.g.cs
+C:\Users\Dashk\OneDrive\Рабочий стол\New folder\Cables_1\Cables_1\obj\Debug\InsertPage.baml
+C:\Users\Dashk\OneDrive\Рабочий стол\New folder\Cables_1\Cables_1\obj\Debug\Select.g.cs
+C:\Users\Dashk\OneDrive\Рабочий стол\New folder\Cables_1\Cables_1\obj\Debug\Select.baml
+C:\Users\Dashk\OneDrive\Рабочий стол\New folder\Cables_1\Cables_1\obj\Debug\Update.g.cs
+C:\Users\Dashk\OneDrive\Рабочий стол\New folder\Cables_1\Cables_1\obj\Debug\Update.baml
+I:\Diploma\Cables_1\Cables_1\obj\Debug\Cables_1.csprojAssemblyReference.cache
+I:\Diploma\Cables_1\Cables_1\obj\Debug\AdminMenu.g.cs
+I:\Diploma\Cables_1\Cables_1\obj\Debug\InsertPage.g.cs
+I:\Diploma\Cables_1\Cables_1\obj\Debug\login.g.cs
+I:\Diploma\Cables_1\Cables_1\obj\Debug\MainWindow.g.cs
+I:\Diploma\Cables_1\Cables_1\obj\Debug\Menu.g.cs
+I:\Diploma\Cables_1\Cables_1\obj\Debug\regin.g.cs
+I:\Diploma\Cables_1\Cables_1\obj\Debug\Select.g.cs
+I:\Diploma\Cables_1\Cables_1\obj\Debug\Update.g.cs
+I:\Diploma\Cables_1\Cables_1\obj\Debug\App.g.cs
+I:\Diploma\Cables_1\Cables_1\obj\Debug\Cables_1_Content.g.cs
+I:\Diploma\Cables_1\Cables_1\obj\Debug\Cables_1_MarkupCompile.cache
+I:\Diploma\Cables_1\Cables_1\obj\Debug\Cables_1_MarkupCompile.lref
+I:\Diploma\Cables_1\Cables_1\obj\Debug\Cables_1.exe
+I:\Diploma\Cables_1\Cables_1\obj\Debug\Cables_1.pdb
+I:\Diploma\Cables_1\Cables_1\bin\Debug\Cables.mdf
+I:\Diploma\Cables_1\Cables_1\bin\Debug\Cables_log.ldf
+I:\Diploma\Cables_1\Cables_1\bin\Debug\EntityFramework.dll
+I:\Diploma\Cables_1\Cables_1\bin\Debug\EntityFramework.SqlServer.dll
+I:\Diploma\Cables_1\Cables_1\bin\Debug\EntityFramework.xml
+I:\Diploma\Cables_1\Cables_1\bin\Debug\EntityFramework.SqlServer.xml
+I:\Diploma\Cables_1\Cables_1\bin\Debug\ru\EntityFramework.resources.dll
+I:\Diploma\Cables_1\Cables_1\obj\Debug\AdminMenu.baml
+I:\Diploma\Cables_1\Cables_1\obj\Debug\InsertPage.baml
+I:\Diploma\Cables_1\Cables_1\obj\Debug\login.baml
+I:\Diploma\Cables_1\Cables_1\obj\Debug\MainWindow.baml
+I:\Diploma\Cables_1\Cables_1\obj\Debug\Menu.baml
+I:\Diploma\Cables_1\Cables_1\obj\Debug\regin.baml
+I:\Diploma\Cables_1\Cables_1\obj\Debug\Select.baml
+I:\Diploma\Cables_1\Cables_1\obj\Debug\Update.baml
+I:\Diploma\Cables_1\Cables_1\obj\Debug\Cables_1.g.resources
+I:\Diploma\Cables_1\Cables_1\obj\Debug\Cables_1.Properties.Resources.resources
+I:\Diploma\Cables_1\Cables_1\obj\Debug\Cables_1.csproj.GenerateResource.cache
+I:\Diploma\Cables_1\Cables_1\obj\Debug\Cables_1.csproj.CoreCompileInputs.cache
+I:\Diploma\Cables_1\Cables_1\obj\Debug\Cables_1.csproj.CopyComplete
+F:\Diploma\Cables_1\Cables_1\bin\Debug\Cables.mdf
+F:\Diploma\Cables_1\Cables_1\bin\Debug\Cables_log.ldf
+F:\Diploma\Cables_1\Cables_1\bin\Debug\Cables_1.exe.config
+F:\Diploma\Cables_1\Cables_1\bin\Debug\Cables_1.exe
+F:\Diploma\Cables_1\Cables_1\bin\Debug\Cables_1.pdb
+F:\Diploma\Cables_1\Cables_1\bin\Debug\EntityFramework.dll
+F:\Diploma\Cables_1\Cables_1\bin\Debug\EntityFramework.SqlServer.dll
+F:\Diploma\Cables_1\Cables_1\bin\Debug\EntityFramework.xml
+F:\Diploma\Cables_1\Cables_1\bin\Debug\EntityFramework.SqlServer.xml
+F:\Diploma\Cables_1\Cables_1\bin\Debug\ru\EntityFramework.resources.dll
+F:\Diploma\Cables_1\Cables_1\obj\Debug\Cables_1.csprojAssemblyReference.cache
+F:\Diploma\Cables_1\Cables_1\obj\Debug\AdminMenu.g.cs
+F:\Diploma\Cables_1\Cables_1\obj\Debug\InsertPage.g.cs
+F:\Diploma\Cables_1\Cables_1\obj\Debug\login.g.cs
+F:\Diploma\Cables_1\Cables_1\obj\Debug\MainWindow.g.cs
+F:\Diploma\Cables_1\Cables_1\obj\Debug\Menu.g.cs
+F:\Diploma\Cables_1\Cables_1\obj\Debug\regin.g.cs
+F:\Diploma\Cables_1\Cables_1\obj\Debug\Select.g.cs
+F:\Diploma\Cables_1\Cables_1\obj\Debug\Update.g.cs
+F:\Diploma\Cables_1\Cables_1\obj\Debug\App.g.cs
+F:\Diploma\Cables_1\Cables_1\obj\Debug\Cables_1_Content.g.cs
+F:\Diploma\Cables_1\Cables_1\obj\Debug\Cables_1_MarkupCompile.cache
+F:\Diploma\Cables_1\Cables_1\obj\Debug\Cables_1_MarkupCompile.lref
+F:\Diploma\Cables_1\Cables_1\obj\Debug\AdminMenu.baml
+F:\Diploma\Cables_1\Cables_1\obj\Debug\InsertPage.baml
+F:\Diploma\Cables_1\Cables_1\obj\Debug\login.baml
+F:\Diploma\Cables_1\Cables_1\obj\Debug\MainWindow.baml
+F:\Diploma\Cables_1\Cables_1\obj\Debug\Menu.baml
+F:\Diploma\Cables_1\Cables_1\obj\Debug\regin.baml
+F:\Diploma\Cables_1\Cables_1\obj\Debug\Select.baml
+F:\Diploma\Cables_1\Cables_1\obj\Debug\Update.baml
+F:\Diploma\Cables_1\Cables_1\obj\Debug\Cables_1.g.resources
+F:\Diploma\Cables_1\Cables_1\obj\Debug\Cables_1.Properties.Resources.resources
+F:\Diploma\Cables_1\Cables_1\obj\Debug\Cables_1.csproj.GenerateResource.cache
+F:\Diploma\Cables_1\Cables_1\obj\Debug\Cables_1.csproj.CopyComplete
+F:\Diploma\Cables_1\Cables_1\obj\Debug\Cables_1.exe
+F:\Diploma\Cables_1\Cables_1\obj\Debug\Cables_1.pdb
+C:\Users\Dashk\OneDrive\Рабочий стол\New folder\Diploma\Cables_1\Cables_1\bin\Debug\Cables.mdf
+C:\Users\Dashk\OneDrive\Рабочий стол\New folder\Diploma\Cables_1\Cables_1\bin\Debug\Cables_log.ldf
+C:\Users\Dashk\OneDrive\Рабочий стол\New folder\Diploma\Cables_1\Cables_1\bin\Debug\Cables_1.exe.config
+C:\Users\Dashk\OneDrive\Рабочий стол\New folder\Diploma\Cables_1\Cables_1\bin\Debug\Cables_1.exe
+C:\Users\Dashk\OneDrive\Рабочий стол\New folder\Diploma\Cables_1\Cables_1\bin\Debug\Cables_1.pdb
+C:\Users\Dashk\OneDrive\Рабочий стол\New folder\Diploma\Cables_1\Cables_1\bin\Debug\EntityFramework.dll
+C:\Users\Dashk\OneDrive\Рабочий стол\New folder\Diploma\Cables_1\Cables_1\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\Dashk\OneDrive\Рабочий стол\New folder\Diploma\Cables_1\Cables_1\bin\Debug\EntityFramework.xml
+C:\Users\Dashk\OneDrive\Рабочий стол\New folder\Diploma\Cables_1\Cables_1\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\Dashk\OneDrive\Рабочий стол\New folder\Diploma\Cables_1\Cables_1\bin\Debug\ru\EntityFramework.resources.dll
+C:\Users\Dashk\OneDrive\Рабочий стол\New folder\Diploma\Cables_1\Cables_1\obj\Debug\Cables_1.csprojAssemblyReference.cache
+C:\Users\Dashk\OneDrive\Рабочий стол\New folder\Diploma\Cables_1\Cables_1\obj\Debug\AdminMenu.g.cs
+C:\Users\Dashk\OneDrive\Рабочий стол\New folder\Diploma\Cables_1\Cables_1\obj\Debug\InsertPage.g.cs
+C:\Users\Dashk\OneDrive\Рабочий стол\New folder\Diploma\Cables_1\Cables_1\obj\Debug\login.g.cs
+C:\Users\Dashk\OneDrive\Рабочий стол\New folder\Diploma\Cables_1\Cables_1\obj\Debug\MainWindow.g.cs
+C:\Users\Dashk\OneDrive\Рабочий стол\New folder\Diploma\Cables_1\Cables_1\obj\Debug\Menu.g.cs
+C:\Users\Dashk\OneDrive\Рабочий стол\New folder\Diploma\Cables_1\Cables_1\obj\Debug\regin.g.cs
+C:\Users\Dashk\OneDrive\Рабочий стол\New folder\Diploma\Cables_1\Cables_1\obj\Debug\Select.g.cs
+C:\Users\Dashk\OneDrive\Рабочий стол\New folder\Diploma\Cables_1\Cables_1\obj\Debug\Update.g.cs
+C:\Users\Dashk\OneDrive\Рабочий стол\New folder\Diploma\Cables_1\Cables_1\obj\Debug\App.g.cs
+C:\Users\Dashk\OneDrive\Рабочий стол\New folder\Diploma\Cables_1\Cables_1\obj\Debug\Cables_1_Content.g.cs
+C:\Users\Dashk\OneDrive\Рабочий стол\New folder\Diploma\Cables_1\Cables_1\obj\Debug\Cables_1_MarkupCompile.cache
+C:\Users\Dashk\OneDrive\Рабочий стол\New folder\Diploma\Cables_1\Cables_1\obj\Debug\Cables_1_MarkupCompile.lref
+C:\Users\Dashk\OneDrive\Рабочий стол\New folder\Diploma\Cables_1\Cables_1\obj\Debug\AdminMenu.baml
+C:\Users\Dashk\OneDrive\Рабочий стол\New folder\Diploma\Cables_1\Cables_1\obj\Debug\InsertPage.baml
+C:\Users\Dashk\OneDrive\Рабочий стол\New folder\Diploma\Cables_1\Cables_1\obj\Debug\login.baml
+C:\Users\Dashk\OneDrive\Рабочий стол\New folder\Diploma\Cables_1\Cables_1\obj\Debug\MainWindow.baml
+C:\Users\Dashk\OneDrive\Рабочий стол\New folder\Diploma\Cables_1\Cables_1\obj\Debug\Menu.baml
+C:\Users\Dashk\OneDrive\Рабочий стол\New folder\Diploma\Cables_1\Cables_1\obj\Debug\regin.baml
+C:\Users\Dashk\OneDrive\Рабочий стол\New folder\Diploma\Cables_1\Cables_1\obj\Debug\Select.baml
+C:\Users\Dashk\OneDrive\Рабочий стол\New folder\Diploma\Cables_1\Cables_1\obj\Debug\Update.baml
+C:\Users\Dashk\OneDrive\Рабочий стол\New folder\Diploma\Cables_1\Cables_1\obj\Debug\Cables_1.g.resources
+C:\Users\Dashk\OneDrive\Рабочий стол\New folder\Diploma\Cables_1\Cables_1\obj\Debug\Cables_1.Properties.Resources.resources
+C:\Users\Dashk\OneDrive\Рабочий стол\New folder\Diploma\Cables_1\Cables_1\obj\Debug\Cables_1.csproj.GenerateResource.cache
+C:\Users\Dashk\OneDrive\Рабочий стол\New folder\Diploma\Cables_1\Cables_1\obj\Debug\Cables_1.csproj.CopyComplete
+C:\Users\Dashk\OneDrive\Рабочий стол\New folder\Diploma\Cables_1\Cables_1\obj\Debug\Cables_1.exe
+C:\Users\Dashk\OneDrive\Рабочий стол\New folder\Diploma\Cables_1\Cables_1\obj\Debug\Cables_1.pdb
+C:\Users\Dashk\OneDrive\Рабочий стол\New folder\Diploma\Cables_1\Cables_1\obj\Debug\Cables_1.csproj.ResolveComReference.cache

@@ -1,0 +1,201 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="Model" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+  <EntityType Name="Current">
+    <Key>
+      <PropertyRef Name="current_id" />
+    </Key>
+    <Property Name="current_id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="cable_id" Type="Int32" />
+    <Property Name="cross_area" Type="Int32" />
+    <Property Name="screen_area" Type="Int32" />
+    <Property Name="material" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="Voltage" Type="Int32" />
+    <Property Name="enviroment" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="paving_type" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="vein_number" Type="Int32" />
+    <Property Name="I" Type="Double" />
+    <Property Name="Wa" Type="Double" />
+    <NavigationProperty Name="Resistance" Relationship="Self.FK_Current_Resistance1" FromRole="Current" ToRole="Resistance" />
+  </EntityType>
+  <EntityType Name="Loses">
+    <Key>
+      <PropertyRef Name="loses_id" />
+    </Key>
+    <Property Name="loses_id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="cable_id" Type="Int32" />
+    <Property Name="cross_area" Type="Int32" />
+    <Property Name="screen_area" Type="Int32" />
+    <Property Name="material" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="enviroment" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="paving_type" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="vein_number" Type="Int32" />
+    <Property Name="Rs" Type="Double" />
+    <Property Name="Rs0" Type="Double" />
+    <Property Name="Rs_R" Type="Double" />
+    <Property Name="P" Type="Double" />
+    <Property Name="Q" Type="Double" />
+    <Property Name="Rs_X" Type="Double" />
+    <Property Name="LambdaScreen" Type="Double" />
+    <Property Name="LambdaArmor" Type="Double" />
+    <Property Name="dvn" Type="Double" />
+    <Property Name="Fst" Type="Double" />
+    <Property Name="Armor" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <NavigationProperty Name="Resistance" Relationship="Self.FK_Loses_Resistance1" FromRole="Loses" ToRole="Resistance" />
+  </EntityType>
+  <EntityType Name="Resistance">
+    <Key>
+      <PropertyRef Name="cable_id" />
+    </Key>
+    <Property Name="cable_id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="cross_area" Type="Int32" />
+    <Property Name="screen_area" Type="Int32" />
+    <Property Name="R0" Type="Double" />
+    <Property Name="R_" Type="Double" />
+    <Property Name="yp" Type="Double" />
+    <Property Name="yb" Type="Double" />
+    <Property Name="xs" Type="Double" />
+    <Property Name="xp" Type="Double" />
+    <Property Name="R" Type="Double" />
+    <Property Name="material" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <NavigationProperty Name="Current" Relationship="Self.FK_Current_Resistance1" FromRole="Resistance" ToRole="Current" />
+    <NavigationProperty Name="Loses" Relationship="Self.FK_Loses_Resistance1" FromRole="Resistance" ToRole="Loses" />
+    <NavigationProperty Name="ThermalResistance" Relationship="Self.FK_ThermalResistance_Resistance1" FromRole="Resistance" ToRole="ThermalResistance" />
+    <NavigationProperty Name="XResistanceScreen" Relationship="Self.FK_XResistanceScreen_Resistance" FromRole="Resistance" ToRole="XResistanceScreen" />
+  </EntityType>
+  <EntityType Name="sysdiagrams">
+    <Key>
+      <PropertyRef Name="diagram_id" />
+    </Key>
+    <Property Name="name" Type="String" MaxLength="128" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="principal_id" Type="Int32" Nullable="false" />
+    <Property Name="diagram_id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="version" Type="Int32" />
+    <Property Name="definition" Type="Binary" MaxLength="Max" FixedLength="false" />
+  </EntityType>
+  <EntityType Name="ThermalResistance">
+    <Key>
+      <PropertyRef Name="thermal_id" />
+    </Key>
+    <Property Name="thermal_id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="cable_id" Type="Int32" />
+    <Property Name="cross_area" Type="Int32" />
+    <Property Name="screen_area" Type="Int32" />
+    <Property Name="material" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="enviroment" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="paving_type" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="vein_number" Type="Int32" />
+    <Property Name="Voltage" Type="Int32" />
+    <Property Name="h" Type="Double" />
+    <Property Name="h1" Type="Double" />
+    <Property Name="dzh" Type="Double" />
+    <Property Name="G" Type="Double" />
+    <Property Name="h2" Type="Double" />
+    <Property Name="Ds" Type="Double" />
+    <Property Name="h3" Type="Double" />
+    <Property Name="dvn" Type="Double" />
+    <Property Name="T1" Type="Double" />
+    <Property Name="T2" Type="Double" />
+    <Property Name="T3" Type="Double" />
+    <Property Name="T4" Type="Double" />
+    <Property Name="Shell" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="Armor" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <NavigationProperty Name="Resistance" Relationship="Self.FK_ThermalResistance_Resistance1" FromRole="ThermalResistance" ToRole="Resistance" />
+  </EntityType>
+  <EntityType Name="users">
+    <Key>
+      <PropertyRef Name="user_id" />
+    </Key>
+    <Property Name="login" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="password" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="user_id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+  </EntityType>
+  <EntityType Name="XResistanceScreen">
+    <Key>
+      <PropertyRef Name="XScreen_id" />
+    </Key>
+    <Property Name="XScreen_id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="cable_id" Type="Int32" />
+    <Property Name="cross_area" Type="Int32" />
+    <Property Name="screen_area" Type="Int32" />
+    <Property Name="S" Type="Double" />
+    <Property Name="d" Type="Double" />
+    <Property Name="dzh" Type="Double" />
+    <Property Name="paving_type" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="material" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="X" Type="Double" />
+    <NavigationProperty Name="Resistance" Relationship="Self.FK_XResistanceScreen_Resistance" FromRole="XResistanceScreen" ToRole="Resistance" />
+  </EntityType>
+  <Association Name="FK_Current_Resistance1">
+    <End Role="Resistance" Type="Self.Resistance" Multiplicity="0..1" />
+    <End Role="Current" Type="Self.Current" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Resistance">
+        <PropertyRef Name="cable_id" />
+      </Principal>
+      <Dependent Role="Current">
+        <PropertyRef Name="cable_id" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Loses_Resistance1">
+    <End Role="Resistance" Type="Self.Resistance" Multiplicity="0..1" />
+    <End Role="Loses" Type="Self.Loses" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Resistance">
+        <PropertyRef Name="cable_id" />
+      </Principal>
+      <Dependent Role="Loses">
+        <PropertyRef Name="cable_id" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_ThermalResistance_Resistance1">
+    <End Role="Resistance" Type="Self.Resistance" Multiplicity="0..1" />
+    <End Role="ThermalResistance" Type="Self.ThermalResistance" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Resistance">
+        <PropertyRef Name="cable_id" />
+      </Principal>
+      <Dependent Role="ThermalResistance">
+        <PropertyRef Name="cable_id" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_XResistanceScreen_Resistance">
+    <End Role="Resistance" Type="Self.Resistance" Multiplicity="0..1" />
+    <End Role="XResistanceScreen" Type="Self.XResistanceScreen" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Resistance">
+        <PropertyRef Name="cable_id" />
+      </Principal>
+      <Dependent Role="XResistanceScreen">
+        <PropertyRef Name="cable_id" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <EntityContainer Name="CablesEntities" annotation:LazyLoadingEnabled="true">
+    <EntitySet Name="Current" EntityType="Self.Current" />
+    <EntitySet Name="Loses" EntityType="Self.Loses" />
+    <EntitySet Name="Resistance" EntityType="Self.Resistance" />
+    <EntitySet Name="sysdiagrams" EntityType="Self.sysdiagrams" />
+    <EntitySet Name="ThermalResistance" EntityType="Self.ThermalResistance" />
+    <EntitySet Name="users" EntityType="Self.users" />
+    <EntitySet Name="XResistanceScreen" EntityType="Self.XResistanceScreen" />
+    <AssociationSet Name="FK_Current_Resistance1" Association="Self.FK_Current_Resistance1">
+      <End Role="Resistance" EntitySet="Resistance" />
+      <End Role="Current" EntitySet="Current" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Loses_Resistance1" Association="Self.FK_Loses_Resistance1">
+      <End Role="Resistance" EntitySet="Resistance" />
+      <End Role="Loses" EntitySet="Loses" />
+    </AssociationSet>
+    <AssociationSet Name="FK_ThermalResistance_Resistance1" Association="Self.FK_ThermalResistance_Resistance1">
+      <End Role="Resistance" EntitySet="Resistance" />
+      <End Role="ThermalResistance" EntitySet="ThermalResistance" />
+    </AssociationSet>
+    <AssociationSet Name="FK_XResistanceScreen_Resistance" Association="Self.FK_XResistanceScreen_Resistance">
+      <End Role="Resistance" EntitySet="Resistance" />
+      <End Role="XResistanceScreen" EntitySet="XResistanceScreen" />
+    </AssociationSet>
+  </EntityContainer>
+</Schema>

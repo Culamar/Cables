@@ -1,0 +1,37 @@
+﻿<Page x:Class="Cables_1.regin"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:Cables_1"
+      mc:Ignorable="d" 
+      d:DesignHeight="450" d:DesignWidth="850"
+      Title="regin">
+    <Page.Background>
+        <ImageBrush ImageSource="Image/64-110kv.jpg"/>
+    </Page.Background>
+    <Grid Width="330" Height="350" Margin="235,36,235,73">
+      
+        <Label  Content="Введите логин:" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="109,62,0,0"/>
+        <TextBox x:Name="log_in" HorizontalAlignment="Left"  Text="" TextWrapping="Wrap" VerticalAlignment="Top" Width="142" Height="29" Margin="93,93,0,0">
+            <TextBox.ToolTip>
+                Укажите логин в форме х@x.x
+            </TextBox.ToolTip>
+        </TextBox>
+        <PasswordBox x:Name="password" HorizontalAlignment="Left" VerticalAlignment="Top" Width="138" Height="29" Margin="93,168,0,0">
+            <PasswordBox.ToolTip>
+                Логин должен быть не короче 6 сиволов, содержать только английские символы, хотябы одну цифру и один из следующих символов: _ - !
+            </PasswordBox.ToolTip>
+        </PasswordBox>
+        <PasswordBox x:Name="password_Copy" HorizontalAlignment="Left" Margin="93,239,0,0" VerticalAlignment="Top" Width="138" Height="29">
+            <PasswordBox.ToolTip>
+                Логин должен быть не короче 6 сиволов, содержать только английские символы, хотябы одну цифру и один из следующих символов: _ - !
+            </PasswordBox.ToolTip>
+        </PasswordBox>
+        <Label Content="Введите пароль:" HorizontalAlignment="Left"  VerticalAlignment="Top" Margin="109,137,0,0"/>
+        <Button x:Name="reg" Content="Регистрация" HorizontalAlignment="Left" Margin="45,291,0,0" VerticalAlignment="Top" Height="32" Width="118" Click="regin_Click"/>
+        <Button x:Name="back" Content="Отмена" HorizontalAlignment="Left" Margin="182,291,0,0" VerticalAlignment="Top" Width="98" Height="32" Click="back_Click"/>
+        <Label Content="Повторите пароль:" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="109,213,0,0"/>
+    </Grid>
+
+</Page>

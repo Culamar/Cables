@@ -1,0 +1,59 @@
+﻿<Page x:Class="Cables_1.Menu"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:Cables_1"
+      mc:Ignorable="d" 
+      d:DesignHeight="450" d:DesignWidth="850"
+      Title="Menu">
+
+    <Grid>
+        
+        <ComboBox x:Name="Voltage" SelectedIndex="0" HorizontalAlignment="Left" Margin="248,85,0,0" VerticalAlignment="Top" Width="120">
+            <ComboBoxItem x:Name="six" Content="6 кВ" HorizontalAlignment="Left" Width="118"/>
+            <ComboBoxItem x:Name="ten" Content="10 кВ" HorizontalAlignment="Left" Width="118"/>
+            <ComboBoxItem x:Name="twenty" Content="20 кВ" HorizontalAlignment="Left" Width="118"/>
+            <ComboBoxItem x:Name="thirtyfive" Content="35 кВ" HorizontalAlignment="Left" Width="118"/>
+            <ComboBoxItem x:Name="hundred" Content="110 кВ" HorizontalAlignment="Left" Width="118"/>
+        </ComboBox>
+        <ComboBox x:Name="Veins" SelectedIndex="0" HorizontalAlignment="Left" Margin="248,144,0,0" VerticalAlignment="Top" Width="120">
+            <ComboBoxItem x:Name="one" Content="1" HorizontalAlignment="Left" Width="118"/>
+            <ComboBoxItem x:Name="three" Content="3" HorizontalAlignment="Left" Width="118"/>
+        </ComboBox>
+        <ComboBox x:Name="Material" SelectedIndex="0" HorizontalAlignment="Left" Margin="248,199,0,0" VerticalAlignment="Top" Width="120">
+            <ComboBoxItem x:Name="aluminium" Content="Алюминий" HorizontalAlignment="Left" Width="118"/>
+            <ComboBoxItem x:Name="copper" Content="Медь" HorizontalAlignment="Left" Width="118"/>
+        </ComboBox>
+        <Label Content="Напряжение" HorizontalAlignment="Left" Margin="94,81,0,0" VerticalAlignment="Top" Width="98"/>
+        <Label Content="Материал жилы" HorizontalAlignment="Left" Margin="94,195,0,0" VerticalAlignment="Top" Width="86"/>
+        <ComboBox x:Name="PavingType" SelectedIndex="0" HorizontalAlignment="Left" Margin="248,255,0,0" VerticalAlignment="Top" Width="120">
+            <ComboBoxItem x:Name="plane"  Content="В плоскости" HorizontalAlignment="Left" Width="118"/>
+            <ComboBoxItem x:Name="thriangle" Content="Треугольником" HorizontalAlignment="Left" Width="118"/>
+        </ComboBox>
+        <Label Content="Способ прокладки"  HorizontalAlignment="Left" Margin="94,251,0,0" VerticalAlignment="Top" Width="123"/>
+
+        <Label Content="Количество жил" HorizontalAlignment="Left" Margin="94,140,0,0" VerticalAlignment="Top" Width="123"/>
+        <ComboBox x:Name="Environment" SelectedIndex="0" HorizontalAlignment="Left" Margin="248,308,0,0" VerticalAlignment="Top" Width="120">
+            <ComboBoxItem x:Name="ground" Content="Земля" HorizontalAlignment="Left" Width="118"/>
+            <ComboBoxItem x:Name="air" Content="Воздух" HorizontalAlignment="Left" Width="118"/>
+        </ComboBox>
+        <Label Content="Среда прокладки" HorizontalAlignment="Left" Margin="94,304,0,0" VerticalAlignment="Top" Width="123"/>
+        <ComboBox x:Name="obolochka" SelectedIndex="0" HorizontalAlignment="Left" Margin="595,91,0,0" VerticalAlignment="Top" Width="120">
+            <ComboBoxItem Content="Полиэтилен"/>
+            <ComboBoxItem Content="Поливинилхлорид"/>
+        </ComboBox>
+        <ComboBox x:Name="Armor" SelectedIndex="0" HorizontalAlignment="Left" Margin="595,144,0,0" VerticalAlignment="Top" Width="120">
+            <ComboBoxItem Content="Алюмининиевая проволочная"/>
+            <ComboBoxItem Content="Стальная ленточная"/>
+            <ComboBoxItem Content="Стальная проволочная"/>
+            <ComboBoxItem Content="Без брони"/>
+        </ComboBox>
+        <Label Content="Броня" HorizontalAlignment="Left" Margin="441,140,0,0" VerticalAlignment="Top" Width="123"/>
+        <TextBlock HorizontalAlignment="Left" Margin="441,91,0,0" TextWrapping="Wrap" Text="Материал оболочки" VerticalAlignment="Top" Width="153"/>
+
+        <Button x:Name="Select" Content="Выбрать" HorizontalAlignment="Left" Margin="94,361,0,0" VerticalAlignment="Top" Width="123" Height="37" Click="Select_Click"/>
+        <Button x:Name="Back" Content="Назад" HorizontalAlignment="Left" Margin="248,361,0,0" VerticalAlignment="Top" Width="123" Height="37" Click="Back_Click" />
+
+    </Grid>
+</Page>

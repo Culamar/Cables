@@ -1,0 +1,53 @@
+﻿<Page x:Class="Cables_1.Select"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:Cables_1"
+      mc:Ignorable="d" 
+      d:DesignHeight="500" d:DesignWidth="850"
+      Title="Select">
+
+    <Grid>
+        
+        <TabControl  x:Name="mainTab" 
+                 Margin="0" 
+                 VerticalAlignment="Stretch"
+                 Height="{Binding Path=ActualHeight,
+                 RelativeSource={RelativeSource Mode=FindAncestor,
+                 AncestorType={x:Type Window}}}">
+            
+            <TabItem Header="Параметры">
+                <DockPanel>
+                    <DataGrid x:Name="selection" IsReadOnly="True" x:FieldModifier="public" AutoGenerateColumns="False" ColumnWidth="*">
+                        <DataGrid.Columns>
+
+                            <DataGridTextColumn Header="Сечение" Binding="{Binding Cross_area, StringFormat=\{0:0.###\}}"/>
+                            <DataGridTextColumn Header="Сечение экрана" Binding="{Binding Screen_area, StringFormat=\{0:0.###\}}"/>
+                            <DataGridTextColumn Header="Материал жилы" Binding="{Binding Material, StringFormat=\{0:0.###\}}"/>
+                            <DataGridTextColumn Header="T1, К·м/Вт" Binding="{Binding T1, StringFormat=\{0:0.###\}}"/>
+                            <DataGridTextColumn Header="T2, К·м/Вт" Binding="{Binding T2, StringFormat=\{0:0.###\}}"/>
+                            <DataGridTextColumn Header="T3, К·м/Вт" Binding="{Binding T3, StringFormat=\{0:0.###\}}"/>
+                            <DataGridTextColumn Header="T4, К·м/Вт" Binding="{Binding T4, StringFormat=\{0:0.###\}}"/>
+                            <DataGridTextColumn Header="I, А" Binding="{Binding I, StringFormat=\{0:0.###\}}"/>
+
+
+
+                        </DataGrid.Columns>
+                    </DataGrid>
+
+
+                </DockPanel>
+            </TabItem>
+
+        </TabControl>
+        <!--<Image Source="Image/26-512.png" HorizontalAlignment="Right" VerticalAlignment="Top" Height="21" Width="21" Margin="0,0,10,0" MouseLeftButtonDown="Button_Click">-->
+            <Button Style="{DynamicResource RoundCorner}" HorizontalAlignment="Right" VerticalAlignment="Top" Height="21" Width="21" Margin="0,0,10,0"  >
+                <Image Source="Image/26-512.png" MouseLeftButtonDown="Button_Click"/>
+            </Button>
+        <Button Style="{DynamicResource RoundCorner}" HorizontalAlignment="Right" VerticalAlignment="Top" Height="21" Width="21" Margin="0,0,55,0"  >
+            <Image Source="Image/UI_2__33-512.png" MouseLeftButtonDown="Button_Click_1"/>
+        </Button>
+      
+    </Grid>
+</Page>
