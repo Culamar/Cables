@@ -75,3 +75,4 @@ C:\Users\Dashk\OneDrive\Рабочий стол\New folder\Diploma\Cables_1\Cabl
 C:\Users\Dashk\OneDrive\Рабочий стол\New folder\Diploma\Cables_1\Cables_1\bin\Release\MaterialDesignThemes.Wpf.xml
 C:\Users\Dashk\OneDrive\Рабочий стол\New folder\Diploma\Cables_1\Cables_1\bin\Release\ru\EntityFramework.SqlServer.resources.dll
 C:\Users\Dashk\OneDrive\Рабочий стол\New folder\Diploma\Cables_1\Cables_1\obj\Release\App.baml
+C:\Users\Dashk\OneDrive\Рабочий стол\New folder\Diploma\Cables_1\Cables_1\obj\Release\Cables_1.csproj.CoreCompileInputs.cache

@@ -9,15 +9,24 @@
       Title="InsertPage">
 
     <Grid Width="750" Height="400">
-        <TextBlock HorizontalAlignment="Left" Margin="33,45,0,0" TextWrapping="Wrap" Text="Количество жил в кабеле" VerticalAlignment="Top" Width="162"/>
-        <ComboBox x:Name="cores" SelectedIndex="0" HorizontalAlignment="Left" Margin="272,45,0,0" VerticalAlignment="Top" Width="39">
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="23*"/>
+            <ColumnDefinition Width="127*"/>
+        </Grid.ColumnDefinitions>
+        <TextBlock HorizontalAlignment="Left" Margin="33,45,0,0" TextWrapping="Wrap" Text="Количество жил в кабеле" VerticalAlignment="Top" Width="162" Grid.ColumnSpan="2"/>
+        <ComboBox x:Name="cores" SelectedIndex="0" HorizontalAlignment="Left" Margin="157,45,0,0" VerticalAlignment="Top" Width="39" Grid.Column="1">
             <ComboBox.Items>
                 <ComboBoxItem>1</ComboBoxItem>
                 <ComboBoxItem>3</ComboBoxItem>
             </ComboBox.Items>
         </ComboBox>
-        <ComboBox x:Name="cross_sectional_area" SelectedIndex="0" HorizontalAlignment="Left" Height="23" Margin="191,82,0,0" VerticalAlignment="Top" Width="120">
+        <ComboBox x:Name="cross_sectional_area" SelectedIndex="0" HorizontalAlignment="Left" Height="23" Margin="76,82,0,0" VerticalAlignment="Top" Width="120" Grid.Column="1">
             <ComboBox.Items>
+                <ComboBoxItem>35</ComboBoxItem>
+                <ComboBoxItem>50</ComboBoxItem>
+                <ComboBoxItem>70</ComboBoxItem>
+                <ComboBoxItem>95</ComboBoxItem>
+                <ComboBoxItem>120</ComboBoxItem>
                 <ComboBoxItem>150</ComboBoxItem>
                 <ComboBoxItem>185</ComboBoxItem>
                 <ComboBoxItem>240</ComboBoxItem>
@@ -29,73 +38,79 @@
                 <ComboBoxItem>1000</ComboBoxItem>
             </ComboBox.Items>
         </ComboBox>
-        <ComboBox x:Name="cross_sectional_screen_area"  HorizontalAlignment="Left" Height="23" Margin="191,110,0,0"  SelectedIndex="0"  VerticalAlignment="Top"  Width="120" >
+        <ComboBox x:Name="cross_sectional_screen_area"  HorizontalAlignment="Left" Height="23" Margin="76,110,0,0"  SelectedIndex="0"  VerticalAlignment="Top"  Width="120" Grid.Column="1" >
             <ComboBox.Items>
+                <ComboBoxItem>16</ComboBoxItem>
+                <ComboBoxItem>25</ComboBoxItem>
+                <ComboBoxItem>35</ComboBoxItem>
+                <ComboBoxItem>50</ComboBoxItem>
+                <ComboBoxItem>70</ComboBoxItem>
                 <ComboBoxItem>95</ComboBoxItem>
                 <ComboBoxItem>120</ComboBoxItem>
                 <ComboBoxItem>150</ComboBoxItem>
                 <ComboBoxItem>185</ComboBoxItem>
             </ComboBox.Items>
         </ComboBox>
-      
-        <TextBlock Text="Сечение жилы, мм" HorizontalAlignment="Left" Margin="33,82,0,0" VerticalAlignment="Top"/>
-        <Label Content="Сечение экрана, мм" HorizontalAlignment="Left" Margin="33,110,0,0" VerticalAlignment="Top"/>
-        <Label Content="Материал жилы" HorizontalAlignment="Left" Margin="33,141,0,0" VerticalAlignment="Top"/>
-        <ComboBox x:Name="material" SelectedIndex="0" HorizontalAlignment="Left" Margin="191,141,0,0" VerticalAlignment="Top" Width="120">
+
+        <TextBlock Text="Сечение жилы, мм" HorizontalAlignment="Left" Margin="33,82,0,0" VerticalAlignment="Top" Grid.ColumnSpan="2"/>
+        <Label Content="Сечение экрана, мм" HorizontalAlignment="Left" Margin="33,110,0,0" VerticalAlignment="Top" Grid.ColumnSpan="2"/>
+        <Label Content="Материал жилы" HorizontalAlignment="Left" Margin="33,141,0,0" VerticalAlignment="Top" Grid.ColumnSpan="2"/>
+        <ComboBox x:Name="material" SelectedIndex="0" HorizontalAlignment="Left" Margin="76,141,0,0" VerticalAlignment="Top" Width="120" Grid.Column="1">
             <ComboBox.Items>
                 <ComboBoxItem>Алюминий</ComboBoxItem>
                 <ComboBoxItem>Медь</ComboBoxItem>
             </ComboBox.Items>
         </ComboBox>
-        <ComboBox x:Name="paving" SelectedIndex="0" HorizontalAlignment="Left" Margin="191,172,0,0" VerticalAlignment="Top" Width="120">
+        <ComboBox x:Name="paving" SelectedIndex="0" HorizontalAlignment="Left" Margin="76,172,0,0" VerticalAlignment="Top" Width="120" Grid.Column="1">
             <ComboBox.Items>
                 <ComboBoxItem>В плоскости</ComboBoxItem>
                 <ComboBoxItem>Треугольником</ComboBoxItem>
             </ComboBox.Items>
         </ComboBox>
-        <TextBlock HorizontalAlignment="Left" Margin="33,172,0,0" TextWrapping="Wrap" Text="Способ прокладлки" VerticalAlignment="Top" Width="128"/>
-        <ComboBox x:Name="environment" SelectedIndex="0" HorizontalAlignment="Left" Margin="191,203,0,0" VerticalAlignment="Top" Width="120">
+        <TextBlock HorizontalAlignment="Left" Margin="33,172,0,0" TextWrapping="Wrap" Text="Способ прокладлки" VerticalAlignment="Top" Width="128" Grid.ColumnSpan="2"/>
+        <ComboBox x:Name="environment" SelectedIndex="0" HorizontalAlignment="Left" Margin="76,203,0,0" VerticalAlignment="Top" Width="120" Grid.Column="1">
             <ComboBox.Items>
                 <ComboBoxItem>Земля</ComboBoxItem>
                 <ComboBoxItem>Воздух</ComboBoxItem>
             </ComboBox.Items>
         </ComboBox>
-        <TextBlock HorizontalAlignment="Left" Margin="33,231,0,0" TextWrapping="Wrap" Text="Удельное сопротивление жилы постоянному току, Ом/м" VerticalAlignment="Top" Width="143"/>
-        <TextBox x:Name="resistance"  HorizontalAlignment="Left" Height="23" Margin="191,240,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120" MaxLength="10" PreviewTextInput="resistance_PreviewTextInput" PreviewKeyDown="resistance_PreviewKeyDown"/>
-        <TextBlock HorizontalAlignment="Left" Margin="33,203,0,0" TextWrapping="Wrap" Text="Среда прокладлки" VerticalAlignment="Top" Width="128"/>
-        <TextBlock HorizontalAlignment="Left" Margin="33,284,0,0" TextWrapping="Wrap" Text="Наружный диаметр кабеля, мм" VerticalAlignment="Top" Width="143"/>
-        <TextBox x:Name="diameter" HorizontalAlignment="Left" Height="23" Margin="191,283,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120" MaxLength="10" PreviewTextInput="diameter_PreviewTextInput" PreviewKeyDown="diameter_PreviewKeyDown"/>
-        <TextBlock HorizontalAlignment="Left" Margin="33,322,0,0" TextWrapping="Wrap" Text="Диаметр жилы, мм" VerticalAlignment="Top" Width="153"/>
-        <TextBox x:Name="core_diameter" HorizontalAlignment="Left" Height="23" Margin="191,321,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120" MaxLength="10" PreviewTextInput="core_diameter_PreviewTextInput" PreviewKeyDown="core_diameter_PreviewKeyDown"/>
-        <TextBlock HorizontalAlignment="Left" Margin="410,83,0,0" TextWrapping="Wrap" Text="Глубина заложения кабеля в грунт, м" VerticalAlignment="Top" Width="153"/>
-        <TextBlock HorizontalAlignment="Left" Margin="410,45,0,0" TextWrapping="Wrap" Text="Напряжение" VerticalAlignment="Top" Width="153"/>
-        <ComboBox x:Name="U" SelectedIndex="0" HorizontalAlignment="Left" Margin="568,45,0,0" VerticalAlignment="Top" Width="120">
+        <TextBlock HorizontalAlignment="Left" Margin="33,203,0,0" TextWrapping="Wrap" Text="Среда прокладлки" VerticalAlignment="Top" Width="128" Grid.ColumnSpan="2"/>
+        <TextBlock HorizontalAlignment="Left" Margin="33,240,0,0" TextWrapping="Wrap" Text="Наружный диаметр кабеля, мм" VerticalAlignment="Top" Width="143" Grid.ColumnSpan="2"/>
+        <TextBox x:Name="diameter" HorizontalAlignment="Left" Height="23" Margin="76,239,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120" MaxLength="10" PreviewTextInput="diameter_PreviewTextInput" PreviewKeyDown="diameter_PreviewKeyDown" Grid.Column="1"/>
+        <TextBlock HorizontalAlignment="Left" Margin="295,83,0,0" TextWrapping="Wrap" Text="Глубина заложения кабеля в грунт, м" VerticalAlignment="Top" Width="153" Grid.Column="1"/>
+        <TextBlock HorizontalAlignment="Left" Margin="295,45,0,0" TextWrapping="Wrap" Text="Напряжение" VerticalAlignment="Top" Width="153" Grid.Column="1"/>
+        <ComboBox x:Name="U" SelectedIndex="0" HorizontalAlignment="Left" Margin="453,45,0,0" VerticalAlignment="Top" Width="120" Grid.Column="1">
             <ComboBoxItem Content="6 кВ"/>
             <ComboBoxItem Content="10 кВ"/>
             <ComboBoxItem Content="20 кВ"/>
             <ComboBoxItem Content="35 кВ"/>
             <ComboBoxItem Content="110 кВ"/>
         </ComboBox>
-        <TextBox x:Name="La" HorizontalAlignment="Left" Height="23" Margin="568,85,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120" MaxLength="10" PreviewTextInput="t_PreviewTextInput" PreviewKeyDown="La_PreviewKeyDown" />
-        <TextBlock HorizontalAlignment="Left" Margin="410,128,0,0" TextWrapping="Wrap" Text="Удельное сопротивление грунта, К·м/Вт" VerticalAlignment="Top" Width="153"/>
-        <TextBox x:Name="rogr" HorizontalAlignment="Left" Height="23" Margin="568,127,0,0" TextWrapping="Wrap" Text="1.8" VerticalAlignment="Top" Width="120" MaxLength="10" PreviewTextInput="t1_PreviewTextInput" PreviewKeyDown="rogr_PreviewKeyDown"  />
-        <TextBlock HorizontalAlignment="Left" Margin="410,172,0,0" TextWrapping="Wrap" Text="Материал оболочки" VerticalAlignment="Top" Width="153"/>
-        <ComboBox x:Name="obolochka" SelectedIndex="0" HorizontalAlignment="Left" Margin="568,172,0,0" VerticalAlignment="Top" Width="120">
+        <TextBox x:Name="La" HorizontalAlignment="Left" Height="23" Margin="453,85,0,0" TextWrapping="Wrap" Text="1" VerticalAlignment="Top" Width="120" MaxLength="10" PreviewTextInput="t_PreviewTextInput" PreviewKeyDown="La_PreviewKeyDown" Grid.Column="1" />
+        <TextBlock HorizontalAlignment="Left" Margin="295,128,0,0" TextWrapping="Wrap" Text="Удельное сопротивление грунта, К·м/Вт" VerticalAlignment="Top" Width="153" Grid.Column="1"/>
+        <TextBox x:Name="rogr" HorizontalAlignment="Left" Height="23" Margin="453,127,0,0" TextWrapping="Wrap" Text="1.8" VerticalAlignment="Top" Width="120" MaxLength="10" PreviewTextInput="t1_PreviewTextInput" PreviewKeyDown="rogr_PreviewKeyDown" Grid.Column="1"  />
+        <TextBlock HorizontalAlignment="Left" Margin="295,172,0,0" TextWrapping="Wrap" Text="Материал оболочки" VerticalAlignment="Top" Width="153" Grid.Column="1"/>
+        <ComboBox x:Name="obolochka" SelectedIndex="0" HorizontalAlignment="Left" Margin="453,172,0,0" VerticalAlignment="Top" Width="120" Grid.Column="1">
             <ComboBoxItem Content="Полиэтилен"/>
             <ComboBoxItem Content="Поливинилхлорид"/>
         </ComboBox>
-        <TextBlock HorizontalAlignment="Left" Margin="410,213,0,0" TextWrapping="Wrap" Text="Броня" VerticalAlignment="Top" Width="153"/>
+        <TextBlock HorizontalAlignment="Left" Margin="295,213,0,0" TextWrapping="Wrap" Text="Броня" VerticalAlignment="Top" Width="153" Grid.Column="1"/>
 
-        <ComboBox x:Name="Armor" SelectedIndex="0" HorizontalAlignment="Left" Margin="568,213,0,0" VerticalAlignment="Top" Width="120">
+        <ComboBox x:Name="Armor" SelectedIndex="0" HorizontalAlignment="Left" Margin="453,213,0,0" VerticalAlignment="Top" Width="120" Grid.Column="1">
             <ComboBoxItem Content="Алюмининиевая проволочная"/>
             <ComboBoxItem Content="Стальная ленточная"/>
             <ComboBoxItem Content="Стальная проволочная"/>
             <ComboBoxItem Content="Без брони"/>
         </ComboBox>
-        <TextBlock HorizontalAlignment="Left" Margin="137,82,0,0" TextWrapping="Wrap" Text="2" VerticalAlignment="Top" FontSize="8"/>
-        <Button Content="Расчёт" HorizontalAlignment="Left" Margin="376,322,0,0" VerticalAlignment="Top" Width="166" Height="50" Click="Button_Click"/>
-        <Button x:Name="Cansel" Content="Назад" HorizontalAlignment="Left" Margin="568,322,0,0" VerticalAlignment="Top" Width="166" Height="50" Click="Cansel_Click"/>
-        <TextBlock HorizontalAlignment="Left" Margin="150,113,0,0" TextWrapping="Wrap" Text="2" VerticalAlignment="Top" FontSize="8"/>
+        <TextBlock HorizontalAlignment="Left" Margin="22,82,0,0" TextWrapping="Wrap" Text="2" VerticalAlignment="Top" FontSize="8" Grid.Column="1"/>
+        <Button Content="Расчёт" HorizontalAlignment="Left" Margin="261,322,0,0" VerticalAlignment="Top" Width="166" Height="50" Click="Button_Click" Grid.Column="1"/>
+        <Button x:Name="Cansel" Content="Назад" HorizontalAlignment="Left" Margin="453,322,0,0" VerticalAlignment="Top" Width="166" Height="50" Click="Cansel_Click" Grid.Column="1"/>
+        <TextBlock HorizontalAlignment="Left" Margin="35,113,0,0" TextWrapping="Wrap" Text="2" VerticalAlignment="Top" FontSize="8" Grid.Column="1"/>
+        <ComboBox x:Name="Insulation" SelectedIndex="0" HorizontalAlignment="Left" Margin="35,-11,0,0" VerticalAlignment="Top" Width="161" Grid.Column="1">
+            <ComboBoxItem Content="Сшитый полиэтилен"/>
+            <ComboBoxItem Content="Бумажно-масляная"/>
+        </ComboBox>
+        <TextBlock HorizontalAlignment="Left" Margin="24,-11,0,0" TextWrapping="Wrap" Text="Изоляция" VerticalAlignment="Top" Width="162" Grid.ColumnSpan="2"/>
 
 
 

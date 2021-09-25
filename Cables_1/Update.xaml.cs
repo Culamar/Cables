@@ -40,17 +40,6 @@ namespace Cables_1
                 e.Handled = true;
             }
         }
-
-        private void resistance_PreviewTextInput(object sender, TextCompositionEventArgs e)
-        {
-            if (!(Char.IsDigit(e.Text, 0) || (e.Text == ".")
-              && (!resistance.Text.Contains(".")
-              && resistance.Text.Length != 0)))
-            {
-                e.Handled = true;
-            }
-        }
-
         private void diameter_PreviewTextInput(object sender, TextCompositionEventArgs e)
         {
             if (!(Char.IsDigit(e.Text, 0) || (e.Text == ".")
@@ -60,17 +49,6 @@ namespace Cables_1
                 e.Handled = true;
             }
         }
-
-        private void core_diameter_PreviewTextInput(object sender, TextCompositionEventArgs e)
-        {
-            if (!(Char.IsDigit(e.Text, 0) || (e.Text == ".")
-              && (!core_diameter.Text.Contains(".")
-              && core_diameter.Text.Length != 0)))
-            {
-                e.Handled = true;
-            }
-        }
-
         private void t_PreviewTextInput(object sender, TextCompositionEventArgs e)
         {
             if (!(Char.IsDigit(e.Text, 0) || (e.Text == ".")
@@ -102,26 +80,13 @@ namespace Cables_1
                 {
                     MessageBox.Show("Укажите сечение экрана");
                 }
-                else if (resistance.Text == "" || double.Parse(resistance.Text, CultureInfo.InvariantCulture) == 0)
-                {
-                    MessageBox.Show("Укажите удельное сопротивление жилы постоянному току");
-                }
                 else if (diameter.Text == "" || double.Parse(diameter.Text, CultureInfo.InvariantCulture) == 0)
                 {
                     MessageBox.Show("Укажите наружный диаметр кабеля");
                 }
-                else if (core_diameter.Text == "" || double.Parse(core_diameter.Text, CultureInfo.InvariantCulture) == 0)
-                {
-                    MessageBox.Show("Укажите диаметр жилы");
-                }
                 else if (La.Text == "" || double.Parse(La.Text, CultureInfo.InvariantCulture) == 0)
                 {
                     MessageBox.Show("Укажите глубину заложения кабеля в грунт");
-                }
-                else if (double.Parse(diameter.Text, CultureInfo.InvariantCulture) < double.Parse(core_diameter.Text, CultureInfo.InvariantCulture))
-                {
-                    MessageBox.Show("Некорректно введены данные: Наружный диаметр должен быть больше диаметра жилы.");
-
                 }
                 else
                 {
@@ -142,7 +107,7 @@ namespace Cables_1
                     double xp4 = 1;
                     double s = 0;
                     double Ralt = 0;
-                    double dzh = double.Parse(core_diameter.Text, CultureInfo.InvariantCulture);
+                    double dzh = 0;
                     double dvn = double.Parse(diameter.Text, CultureInfo.InvariantCulture);
                     double R90alt = 0;
                     double dav = 0;
@@ -454,7 +419,81 @@ namespace Cables_1
                     if (material.Text == "Алюминий")
                     {
 
-                        Ralt = 1.2821 * double.Parse(resistance.Text, CultureInfo.InvariantCulture);
+                        if (int.Parse(cross_sectional_area.Text, CultureInfo.InvariantCulture) <= 35)
+                        {
+                            Ralt = 1.2821 * 0.868;
+                            dzh = 7.5;
+                        }
+                        else if (int.Parse(cross_sectional_area.Text, CultureInfo.InvariantCulture) <= 50)
+                        {
+                            Ralt = 1.2821 * 0.641;
+                            dzh = 8;
+                        }
+                        else if (int.Parse(cross_sectional_area.Text, CultureInfo.InvariantCulture) <= 70)
+                        {
+                            Ralt = 1.2821 * 0.443;
+                            dzh = 10.2;
+                        }
+                        else if (int.Parse(cross_sectional_area.Text, CultureInfo.InvariantCulture) <= 95)
+                        {
+                            Ralt = 1.2821 * 0.32;
+                            dzh = 12;
+                        }
+                        else if (int.Parse(cross_sectional_area.Text, CultureInfo.InvariantCulture) <= 120)
+                        {
+                            Ralt = 1.2821 * 0.253;
+                            dzh = 13.5;
+                        }
+                        else if (int.Parse(cross_sectional_area.Text, CultureInfo.InvariantCulture) <= 150)
+                        {
+                            Ralt = 1.2821 * 0.206;
+                            dzh = 15;
+                        }
+                        else if (int.Parse(cross_sectional_area.Text, CultureInfo.InvariantCulture) <= 185)
+                        {
+                            Ralt = 1.2821 * 0.164;
+                            dzh = 16.8;
+                        }
+                        else if (int.Parse(cross_sectional_area.Text, CultureInfo.InvariantCulture) <= 240)
+                        {
+                            Ralt = 1.2821 * 0.125;
+                            dzh = 19.2;
+                        }
+                        else if (int.Parse(cross_sectional_area.Text, CultureInfo.InvariantCulture) <= 300)
+                        {
+                            Ralt = 1.2821 * 0.1;
+                            dzh = 21.6;
+                        }
+                        else if (int.Parse(cross_sectional_area.Text, CultureInfo.InvariantCulture) <= 400)
+                        {
+                            Ralt = 1.2821 * 0.0778;
+                            dzh = 24.6;
+                        }
+                        else if (int.Parse(cross_sectional_area.Text, CultureInfo.InvariantCulture) <= 500)
+                        {
+                            Ralt = 1.2821 * 0.0605;
+                            dzh = 27.6;
+                        }
+                        else if (int.Parse(cross_sectional_area.Text, CultureInfo.InvariantCulture) <= 630)
+                        {
+                            Ralt = 1.2821 * 0.0469;
+                            dzh = 31.48;
+                        }
+                        else if (int.Parse(cross_sectional_area.Text, CultureInfo.InvariantCulture) <= 800)
+                        {
+                            Ralt = 1.2821 * 0.0367;
+                            dzh = 35.47;
+                        }
+                        else if (int.Parse(cross_sectional_area.Text, CultureInfo.InvariantCulture) <= 1000)
+                        {
+                            Ralt = 1.2821 * 0.0291;
+                            dzh = 39.66;
+                        }
+                        else
+                        {
+                            Ralt = 1.2821 * 0.0291;
+                            dzh = 39.66;
+                        }
                         if (paving.Text == "В плоскости" && cores.Text == "1")
                         {
                             s = 2 * dvn;
@@ -489,7 +528,81 @@ namespace Cables_1
                     }
                     if (material.Text == "Медь")
                     {
-                        Ralt = 1.275 * double.Parse(resistance.Text, CultureInfo.InvariantCulture);
+                        if (int.Parse(cross_sectional_area.Text, CultureInfo.InvariantCulture) <= 35)
+                        {
+                            Ralt = 1.275 * 0.524;
+                            dzh = 7.9;
+                        }
+                        else if (int.Parse(cross_sectional_area.Text, CultureInfo.InvariantCulture) <= 50)
+                        {
+                            Ralt = 1.275 * 0.387;
+                            dzh = 9.1;
+                        }
+                        else if (int.Parse(cross_sectional_area.Text, CultureInfo.InvariantCulture) <= 70)
+                        {
+                            Ralt = 1.275 * 0.268;
+                            dzh = 11;
+                        }
+                        else if (int.Parse(cross_sectional_area.Text, CultureInfo.InvariantCulture) <= 95)
+                        {
+                            Ralt = 1.275 * 0.193;
+                            dzh = 12.9;
+                        }
+                        else if (int.Parse(cross_sectional_area.Text, CultureInfo.InvariantCulture) <= 120)
+                        {
+                            Ralt = 1.275 * 0.153;
+                            dzh = 14.5;
+                        }
+                        else if (int.Parse(cross_sectional_area.Text, CultureInfo.InvariantCulture) <= 150)
+                        {
+                            Ralt = 1.275 * 0.124;
+                            dzh = 16.2;
+                        }
+                        else if (int.Parse(cross_sectional_area.Text, CultureInfo.InvariantCulture) <= 185)
+                        {
+                            Ralt = 1.275 * 0.0991;
+                            dzh = 18;
+                        }
+                        else if (int.Parse(cross_sectional_area.Text, CultureInfo.InvariantCulture) <= 240)
+                        {
+                            Ralt = 1.275 * 0.0754;
+                            dzh = 20.6;
+                        }
+                        else if (int.Parse(cross_sectional_area.Text, CultureInfo.InvariantCulture) <= 300)
+                        {
+                            Ralt = 1.275 * 0.0601;
+                            dzh = 23.1;
+                        }
+                        else if (int.Parse(cross_sectional_area.Text, CultureInfo.InvariantCulture) <= 400)
+                        {
+                            Ralt = 1.275 * 0.047;
+                            dzh = 26.1;
+                        }
+                        else if (int.Parse(cross_sectional_area.Text, CultureInfo.InvariantCulture) <= 500)
+                        {
+                            Ralt = 1.275 * 0.0366;
+                            dzh = 29.2;
+                        }
+                        else if (int.Parse(cross_sectional_area.Text, CultureInfo.InvariantCulture) <= 630)
+                        {
+                            Ralt = 1.275 * 0.0283;
+                            dzh = 33.2;
+                        }
+                        else if (int.Parse(cross_sectional_area.Text, CultureInfo.InvariantCulture) <= 800)
+                        {
+                            Ralt = 1.275 * 0.0221;
+                            dzh = 37.6;
+                        }
+                        else if (int.Parse(cross_sectional_area.Text, CultureInfo.InvariantCulture) <= 1000)
+                        {
+                            Ralt = 1.275 * 0.0176;
+                            dzh = 42.8;
+                        }
+                        else
+                        {
+                            Ralt = 1.275 * 0.0176;
+                            dzh = 42.8;
+                        }
                         if (paving.Text == "В плоскости" && cores.Text == "1")
                         {
                             s = 2 * dvn;
@@ -784,13 +897,22 @@ namespace Cables_1
                     }
                     double C = epsilon * Math.Pow(10, -9) / (18 * 2.3 * Math.Log10((dzh + 2 * (0.6 + diz)) / (dzh + 1.2)));
                     double W = 2 * (Math.PI) * 50 * C * Math.Pow((Unom * 1000 / (Math.Sqrt(3))), 2) * tgd;
-                    Imax = Math.Sqrt((90 - 10 - W * (0.5 * T1 + core * (T2 + T3 + T4))) / ((R90alt / 1000) * (T1 + core * (T2 * (1 + LScreen) + (T3 + T4) * (1 + LScreen + LArmor)))));
+                    if (environment.Text == "Земля")
+                    {
+                        Imax = Math.Sqrt((90 - 10 - W * (0.5 * T1 + core * (T2 + T3 + T4))) / ((R90alt / 1000) * (T1 + core * (T2 * (1 + LScreen) + (T3 + T4) * (1 + LScreen + LArmor)))));
+
+                    }
+                    else if (environment.Text == "Воздух")
+                    {
+                        Imax = Math.Sqrt((90 - 15 - W * (0.5 * T1 + core * (T2 + T3 + T4))) / ((R90alt / 1000) * (T1 + core * (T2 * (1 + LScreen) + (T3 + T4) * (1 + LScreen + LArmor)))));
+
+                    }
+                    else Imax = 0;
                     Resistance newResistance = new Resistance()
                     {
                         cable_id = Id,
                         cross_area = int.Parse(cross_sectional_area.Text, CultureInfo.InvariantCulture),
                         screen_area = int.Parse(cross_sectional_screen_area.Text, CultureInfo.InvariantCulture),
-                        R0 = double.Parse(resistance.Text, CultureInfo.InvariantCulture),
                         R_ = Ralt,
                         yp = yp1,
                         yb = yb1,

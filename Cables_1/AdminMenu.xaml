@@ -19,11 +19,9 @@
                 <DockPanel>
                     <DataGrid x:Name="resistance"  x:FieldModifier="public" ColumnWidth="*" AutoGenerateColumns="False" >
                         <DataGrid.Columns>
-
                             <DataGridTextColumn Header="Сечение" IsReadOnly="True" Binding="{Binding cross_area, StringFormat=\{0:0.###\}}"/>
                             <DataGridTextColumn Header="Сечение экрана" IsReadOnly="True" Binding="{Binding screen_area, StringFormat=\{0:0.###\}}"/>
                             <DataGridTextColumn Header="Материал жилы" IsReadOnly="True" Binding="{Binding material, StringFormat=\{0:0.###\}}"/>
-                            <DataGridTextColumn Header="R0, Ом/м" IsReadOnly="True" Binding="{Binding R0, StringFormat=\{0:0.###\}}"/>
                             <DataGridTextColumn Header="R, Ом/м" IsReadOnly="True" Binding="{Binding R, StringFormat=\{0:0.###\}}"/>
                             <DataGridTemplateColumn>
                                 <DataGridTemplateColumn.HeaderTemplate>
@@ -51,7 +49,6 @@
                 <DockPanel>
                     <DataGrid x:Name="Xresistance" x:FieldModifier="public" AutoGenerateColumns="False" ColumnWidth="*">
                         <DataGrid.Columns>
-
                             <DataGridTextColumn Header="Сечение" IsReadOnly="True" Binding="{Binding cross_area, StringFormat=\{0:0.###\}}"/>
                             <DataGridTextColumn Header="Сечение экрана" IsReadOnly="True" Binding="{Binding screen_area, StringFormat=\{0:0.###\}}"/>
                             <DataGridTextColumn Header="Материал жилы" IsReadOnly="True" Binding="{Binding material, StringFormat=\{0:0.###\}}"/>
@@ -68,7 +65,6 @@
                 <DockPanel>
                     <DataGrid x:Name="loses" x:FieldModifier="public" AutoGenerateColumns="False" ColumnWidth="*">
                         <DataGrid.Columns>
-
                             <DataGridTextColumn Header="Сечение" IsReadOnly="True" Binding="{Binding cross_area, StringFormat=\{0:0.###\}}"/>
                             <DataGridTextColumn Header="Сечение экрана" IsReadOnly="True" Binding="{Binding screen_area, StringFormat=\{0:0.###\}}"/>
                             <DataGridTextColumn Header="Материал жилы" IsReadOnly="True" Binding="{Binding material, StringFormat=\{0:0.###\}}"/>
@@ -87,7 +83,7 @@
                 <DockPanel>
                     <DataGrid x:Name="Tresistance" x:FieldModifier="public" AutoGenerateColumns="False" ColumnWidth="*">
                         <DataGrid.Columns>
-
+                            <DataGridTextColumn Header="U, кВ" IsReadOnly="True" Binding="{Binding Voltage, StringFormat=\{0:0\}}"/>
                             <DataGridTextColumn Header="Сечение" IsReadOnly="True" Binding="{Binding cross_area, StringFormat=\{0:0.###\}}"/>
                             <DataGridTextColumn Header="Сечение экрана" IsReadOnly="True" Binding="{Binding screen_area, StringFormat=\{0:0.###\}}"/>
                             <DataGridTextColumn Header="Материал жилы" IsReadOnly="True" Binding="{Binding material, StringFormat=\{0:0.###\}}"/>
@@ -111,7 +107,7 @@
                 <DockPanel>
                     <DataGrid x:Name="current" x:FieldModifier="public" AutoGenerateColumns="False" ColumnWidth="*">
                         <DataGrid.Columns>
-
+                            <DataGridTextColumn Header="U, кВ" IsReadOnly="True" Binding="{Binding Voltage, StringFormat=\{0:0\}}"/>
                             <DataGridTextColumn Header="Сечение" IsReadOnly="True" Binding="{Binding cross_area, StringFormat=\{0:0.###\}}"/>
                             <DataGridTextColumn Header="Сечение экрана" IsReadOnly="True" Binding="{Binding screen_area, StringFormat=\{0:0.###\}}"/>
                             <DataGridTextColumn Header="Материал жилы" IsReadOnly="True" Binding="{Binding material, StringFormat=\{0:0.###\}}"/>
@@ -120,6 +116,7 @@
                             <DataGridTextColumn Header="Среда прокладки" IsReadOnly="True" Binding="{Binding enviroment, StringFormat=\{0:0.###\}}"/>
                             <DataGridTextColumn Header="W, Вт/м" IsReadOnly="True" Binding="{Binding Wa, StringFormat=\{0:0.###\}}"/>
                             <DataGridTextColumn Header="I, А" IsReadOnly="True" Binding="{Binding I, StringFormat=\{0:0.###\}}"/>
+                            
 
                         </DataGrid.Columns>
                     </DataGrid>

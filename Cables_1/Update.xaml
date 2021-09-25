@@ -59,13 +59,9 @@
                 <ComboBoxItem>Воздух</ComboBoxItem>
             </ComboBox.Items>
         </ComboBox>
-        <TextBlock HorizontalAlignment="Left" Margin="33,231,0,0" TextWrapping="Wrap" Text="Удельное сопротивление жилы постоянному току, Ом/м" VerticalAlignment="Top" Width="143"/>
-        <TextBox x:Name="resistance"  HorizontalAlignment="Left" Height="23" Margin="191,240,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120" MaxLength="10" PreviewTextInput="resistance_PreviewTextInput" PreviewKeyDown="resistance_PreviewKeyDown"/>
         <TextBlock HorizontalAlignment="Left" Margin="33,203,0,0" TextWrapping="Wrap" Text="Среда прокладлки" VerticalAlignment="Top" Width="128"/>
-        <TextBlock HorizontalAlignment="Left" Margin="33,284,0,0" TextWrapping="Wrap" Text="Наружный диаметр кабеля, мм" VerticalAlignment="Top" Width="143"/>
-        <TextBox x:Name="diameter" HorizontalAlignment="Left" Height="23" Margin="191,283,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120" MaxLength="10" PreviewTextInput="diameter_PreviewTextInput" PreviewKeyDown="diameter_PreviewKeyDown"/>
-        <TextBlock HorizontalAlignment="Left" Margin="33,322,0,0" TextWrapping="Wrap" Text="Диаметр жилы, мм" VerticalAlignment="Top" Width="153"/>
-        <TextBox x:Name="core_diameter" HorizontalAlignment="Left" Height="23" Margin="191,321,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120" MaxLength="10" PreviewTextInput="core_diameter_PreviewTextInput" PreviewKeyDown="core_diameter_PreviewKeyDown"/>
+        <TextBlock HorizontalAlignment="Left" Margin="33,244,0,0" TextWrapping="Wrap" Text="Наружный диаметр кабеля, мм" VerticalAlignment="Top" Width="143"/>
+        <TextBox x:Name="diameter" HorizontalAlignment="Left" Height="23" Margin="191,243,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120" MaxLength="10" PreviewTextInput="diameter_PreviewTextInput" PreviewKeyDown="diameter_PreviewKeyDown"/>
         <TextBlock HorizontalAlignment="Left" Margin="410,83,0,0" TextWrapping="Wrap" Text="Глубина заложения кабеля в грунт, м" VerticalAlignment="Top" Width="153"/>
         <TextBlock HorizontalAlignment="Left" Margin="410,45,0,0" TextWrapping="Wrap" Text="Напряжение" VerticalAlignment="Top" Width="153"/>
         <ComboBox x:Name="U" SelectedIndex="0" HorizontalAlignment="Left" Margin="568,45,0,0" VerticalAlignment="Top" Width="120">
@@ -75,7 +71,7 @@
             <ComboBoxItem Content="35 кВ"/>
             <ComboBoxItem Content="110 кВ"/>
         </ComboBox>
-        <TextBox x:Name="La" HorizontalAlignment="Left" Height="23" Margin="568,85,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120" MaxLength="10" PreviewTextInput="t_PreviewTextInput" PreviewKeyDown="La_PreviewKeyDown" />
+        <TextBox x:Name="La" HorizontalAlignment="Left" Height="23" Margin="568,85,0,0" TextWrapping="Wrap" Text="1" VerticalAlignment="Top" Width="120" MaxLength="10" PreviewTextInput="t_PreviewTextInput" PreviewKeyDown="La_PreviewKeyDown" />
         <TextBlock HorizontalAlignment="Left" Margin="410,128,0,0" TextWrapping="Wrap" Text="Удельное сопротивление грунта, К·м/Вт" VerticalAlignment="Top" Width="153"/>
         <TextBox x:Name="rogr" HorizontalAlignment="Left" Height="23" Margin="568,127,0,0" TextWrapping="Wrap" Text="1.8" VerticalAlignment="Top" Width="120" MaxLength="10" PreviewTextInput="t1_PreviewTextInput" PreviewKeyDown="rogr_PreviewKeyDown"  />
         <TextBlock HorizontalAlignment="Left" Margin="410,172,0,0" TextWrapping="Wrap" Text="Материал оболочки" VerticalAlignment="Top" Width="153"/>
